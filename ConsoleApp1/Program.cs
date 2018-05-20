@@ -6,7 +6,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Task task1 = new Task();
+            task1.taskNumber = 1;
+            task1.taskName = "Create Tasks Program";
+            task1.taskDescription = "This is a task to create a Tasks list program in C#";
+
+            task1.Describe();
+
+            Console.Read();
         }
     }
 }
